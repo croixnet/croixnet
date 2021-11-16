@@ -1,5 +1,4 @@
-FROM httpd:2.4-alpine
-
+FROM httpd:2.4.41
 RUN apk -q add libcap=2.27-r0 --no-cache
 
 #Change access righs to conf, logs, bin from root to www-data
