@@ -12,6 +12,6 @@ phases:
   build:
     commands:
       #build docker image
-      - docker build -t $project_name:$tag .
-      - docker tag $project_name:$tag $ecr:$tag
+      - docker build -t $project_name:$IMAGE_TAG .
+      - docker tag $project_name:$IMAGE_TAG $ecr:$IMAGE_TAG
       - docker push $ecr
