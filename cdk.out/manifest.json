@@ -1,0 +1,1832 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "pipeline-to-ecr": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://104448195137/us-east-2",
+      "properties": {
+        "templateFile": "pipeline-to-ecr.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/pipeline-to-ecr/fargate-dev-workshop-apprepo/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fargatedevworkshopapprepo09C62F80",
+            "trace": [
+              "new Repository (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:285:28)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/fargate-dev-workshop-apprepo/pipelinetoecrMyPipeline18360B7AEventRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fargatedevworkshopapprepopipelinetoecrMyPipeline18360B7AEventRuleAC4B2024",
+            "trace": [
+              "new Rule (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-events/lib/rule.js:35:26)",
+              "Repository.onEvent (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:30:22)",
+              "Repository.onStateChange (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:44:27)",
+              "Repository.onReferenceUpdated (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:66:27)",
+              "Repository.onCommit (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:116:27)",
+              "CodeCommitSourceAction.bound (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:88:35)",
+              "CodeCommitSourceAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/fargate-dev-workshop/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fargatedevworkshopDC8556A7",
+            "trace": [
+              "new Repository (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecr/lib/repository.js:205:26)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/ArtifactsBucketEncryptionKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineArtifactsBucketEncryptionKey8BF0A7F3",
+            "trace": [
+              "new Key (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-kms/lib/key.js:271:26)",
+              "new Pipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:193:33)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/ArtifactsBucketEncryptionKeyAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineArtifactsBucketEncryptionKeyAlias9D4F8C59",
+            "trace": [
+              "new Alias (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-kms/lib/alias.js:118:26)",
+              "new Pipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:200:17)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineArtifactsBucket727923DD",
+            "trace": [
+              "new Bucket (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-s3/lib/bucket.js:586:26)",
+              "new Pipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:206:27)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineRoleC0D47CA4",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Pipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:216:35)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineRoleDefaultPolicy34F09EFA",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/grant.js:90:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/grant.js:45:30)",
+              "Bucket.grant (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-s3/lib/bucket.js:442:31)",
+              "Bucket.grantReadWrite (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-s3/lib/bucket.js:335:21)",
+              "new Pipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:229:29)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineAED38ECF",
+            "trace": [
+              "new Pipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:219:30)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Source/CodeCommit/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineSourceCodeCommitCodePipelineActionRole3B3AD87E",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "Pipeline.getRoleForAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:501:26)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:345:33)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Source/CodeCommit/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineSourceCodeCommitCodePipelineActionRoleDefaultPolicyEC1DD3CC",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/grant.js:90:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/grant.js:45:30)",
+              "Bucket.grant (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-s3/lib/bucket.js:442:31)",
+              "Bucket.grantReadWrite (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-s3/lib/bucket.js:335:21)",
+              "CodeCommitSourceAction.bound (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:97:24)",
+              "CodeCommitSourceAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/EventsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineEventsRoleFAB99F32",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "Object.singletonEventRole (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-events-targets/lib/util.js:39:18)",
+              "CodePipeline.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.js:33:52)",
+              "Rule.addTarget (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-events/lib/rule.js:88:36)",
+              "Repository.onEvent (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:35:14)",
+              "Repository.onStateChange (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:44:27)",
+              "Repository.onReferenceUpdated (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:66:27)",
+              "Repository.onCommit (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:116:27)",
+              "CodeCommitSourceAction.bound (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:88:35)",
+              "CodeCommitSourceAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/EventsRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineEventsRoleDefaultPolicyF045F033",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:221:21)",
+              "Array.forEach (<anonymous>)",
+              "Object.singletonEventRole (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-events-targets/lib/util.js:43:22)",
+              "CodePipeline.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.js:33:52)",
+              "Rule.addTarget (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-events/lib/rule.js:88:36)",
+              "Repository.onEvent (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:35:14)",
+              "Repository.onStateChange (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:44:27)",
+              "Repository.onReferenceUpdated (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:66:27)",
+              "Repository.onCommit (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:116:27)",
+              "CodeCommitSourceAction.bound (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:88:35)",
+              "CodeCommitSourceAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Lint/DockerLintImages/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineLintDockerLintImagesCodePipelineActionRole859AFE61",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "Pipeline.getRoleForAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:501:26)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:345:33)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Lint/DockerLintImages/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineLintDockerLintImagesCodePipelineActionRoleDefaultPolicyAE695748",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:221:21)",
+              "CodeBuildAction.bound (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.js:78:22)",
+              "CodeBuildAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/SecretScan/DockerSecretScanImages/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineSecretScanDockerSecretScanImagesCodePipelineActionRoleA1BC6871",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "Pipeline.getRoleForAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:501:26)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:345:33)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/SecretScan/DockerSecretScanImages/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineSecretScanDockerSecretScanImagesCodePipelineActionRoleDefaultPolicyB4727F6E",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:221:21)",
+              "CodeBuildAction.bound (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.js:78:22)",
+              "CodeBuildAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Build/DockerBuildImages/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineBuildDockerBuildImagesCodePipelineActionRoleE3845FE2",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "Pipeline.getRoleForAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:501:26)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:345:33)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Build/DockerBuildImages/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineBuildDockerBuildImagesCodePipelineActionRoleDefaultPolicy04226057",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:221:21)",
+              "CodeBuildAction.bound (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.js:78:22)",
+              "CodeBuildAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "new Stage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:28:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:278:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerLint/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerLintRoleBA4A0360",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Project (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:311:35)",
+              "new PipelineProject (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerLint/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerLintRoleDefaultPolicyBEB3C41D",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "PipelineProject.addToRolePolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:60:23)",
+              "new Project (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:396:14)",
+              "new PipelineProject (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerLint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerLintAE1899AD",
+            "trace": [
+              "new Project (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:353:26)",
+              "new PipelineProject (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerSecretScan/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerSecretScanRole4D0115A2",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Project (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:311:35)",
+              "new PipelineProject (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerSecretScan/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerSecretScanRoleDefaultPolicy2212C561",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "PipelineProject.addToRolePolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:60:23)",
+              "new Project (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:396:14)",
+              "new PipelineProject (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerSecretScan/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerSecretScan0936513F",
+            "trace": [
+              "new Project (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:353:26)",
+              "new PipelineProject (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerBuild/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerBuildRole2BAC6ED2",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Project (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:311:35)",
+              "new PipelineProject (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerBuild/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerBuildRoleDefaultPolicy0D649F98",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "PipelineProject.addToRolePolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:60:23)",
+              "new Project (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:396:14)",
+              "new PipelineProject (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerBuild/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerBuildCFACF599",
+            "trace": [
+              "new Project (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/project.js:353:26)",
+              "new PipelineProject (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "pipeline-to-ecr"
+    },
+    "ecs-inf-test": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://104448195137/us-east-2",
+      "properties": {
+        "templateFile": "ecs-inf-test.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/ecs-inf-test/TheVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPC92636AB0",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:384:25)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1Subnet770D4FF2",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:718:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:883:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:616:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1RouteTable17DA183D",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:734:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:883:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:616:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1RouteTableAssociationE5186D77",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:739:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:883:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:616:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1DefaultRoute6D26543F",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:774:23)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:422:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:421:32)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1EIP4412F690",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:903:27)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:82:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:574:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1NATGatewayC61D892B",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:901:21)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:82:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:574:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2Subnet73F96DA9",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:718:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:883:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:616:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2RouteTable3609F42C",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:734:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:883:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:616:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2RouteTableAssociationB4B0A733",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:739:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:883:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:616:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2DefaultRouteFEB062B2",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:774:23)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:422:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:421:32)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2EIP5AAFF9FA",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:903:27)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:82:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:574:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2NATGatewayB437CFAF",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:901:21)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:82:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:574:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3Subnet7C1E748F",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:718:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:883:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:616:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3RouteTable679ADB47",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:734:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:883:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:616:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3RouteTableAssociationACA3F606",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:739:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:883:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:616:42",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3DefaultRoute326CE968",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:774:23)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:422:30",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:421:32)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3EIPE3930834",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:903:27)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:82:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:574:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3NATGateway3A4A718F",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:901:21)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:82:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:574:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1Subnet571D3690",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:718:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:923:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1RouteTableF6513BC2",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:734:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:923:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1RouteTableAssociation46F1FFFC",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:739:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:923:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1DefaultRouteD1B9E467",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:821:23)",
+              "NatGatewayProvider.configureSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:97:16)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:91:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:574:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2SubnetCC3D7013",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:718:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:923:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2RouteTable9AC81FAC",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:734:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:923:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2RouteTableAssociation336D47D1",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:739:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:923:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2DefaultRoute52A1F245",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:821:23)",
+              "NatGatewayProvider.configureSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:97:16)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:91:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:574:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet3Subnet69CC2C6F",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:718:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:923:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet3RouteTable1A0D1274",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:734:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:923:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet3RouteTableAssociation50EE5E34",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:739:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:923:9)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:621:43",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:600:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:596:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:410:14)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet3DefaultRoute990F9A2A",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:821:23)",
+              "NatGatewayProvider.configureSubnet (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:97:16)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/nat.js:91:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:574:18)",
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:427:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCIGWFA25CC08",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:414:25)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCVPCGWC9B93E30",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:417:25)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/ServiceTaskDefExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefExecutionRole13E8686E",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/ServiceTaskDefExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefExecutionRoleDefaultPolicy4626101A",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/grant.js:90:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/grant.js:45:30)",
+              "Import.grant (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecr/lib/repository.js:154:26)",
+              "Import.grantPull (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecr/lib/repository.js:168:26)",
+              "EcrImage.bind (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecs/lib/images/ecr.js:35:25)",
+              "new ContainerDefinition (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:112:40)",
+              "FargateTaskDefinition.addContainer (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:265:16)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/ServiceTaskDefTaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefTaskRole4A468EED",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/CodeDeployRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeDeployRole12BEECBE",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/ecs-cluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecscluster7830E7B5",
+            "trace": [
+              "new Cluster (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecs/lib/cluster.js:79:25)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancer25023A58",
+            "trace": [
+              "new BaseLoadBalancer (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.js:35:26)",
+              "new ApplicationLoadBalancer (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:28:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerSecurityGroup2D54D16B",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:226:30)",
+              "new ApplicationLoadBalancer (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:34:56)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/SecurityGroup/to ecsinftestservicesg94443D5E:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerSecurityGrouptoecsinftestservicesg94443D5E80EA1756DA",
+            "trace": [
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:73:13)",
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:358:19)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:81:31",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:80:51",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "Connections.allowTo (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:79:30)",
+              "Connections.allowFrom (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:112:31)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/load_balancer_listener_1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerloadbalancerlistener1CE676931",
+            "trace": [
+              "new BaseListener (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.js:21:26)",
+              "new ApplicationListener (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:32:9)",
+              "ApplicationLoadBalancer.addListener (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:74:26)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/load_balancer_listener_1/load_balancer_target_1Group/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerloadbalancerlistener1loadbalancertarget1Group06D2C091",
+            "trace": [
+              "new TargetGroupBase (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.js:44:25)",
+              "new ApplicationTargetGroup (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:26:9)",
+              "ApplicationListener.addTargets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:228:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/load_balancer_listener_2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerloadbalancerlistener20A0A50DC",
+            "trace": [
+              "new BaseListener (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.js:21:26)",
+              "new ApplicationListener (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:32:9)",
+              "ApplicationLoadBalancer.addListener (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:74:26)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/load_balancer_listener_2/load_balancer_target_2Group/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerloadbalancerlistener2loadbalancertarget2Group306D6C94",
+            "trace": [
+              "new TargetGroupBase (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.js:44:25)",
+              "new ApplicationTargetGroup (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:26:9)",
+              "ApplicationListener.addTargets (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:228:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/service_sg/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "servicesgE18B74B7",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:226:30)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/service_sg/from ecsinftestloadbalancerSecurityGroupAD47570C:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "servicesgfromecsinftestloadbalancerSecurityGroupAD47570C807749B771",
+            "trace": [
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:58:13)",
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:318:19)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:106:31",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:105:51",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "Connections.allowFrom (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ec2/lib/connections.js:104:30)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/log_group/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loggroupA5D580CF",
+            "trace": [
+              "new LogGroup (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-logs/lib/log-group.js:181:26)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/fargate_task_definition/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fargatetaskdefinitionC3EBDAF7",
+            "trace": [
+              "new TaskDefinition (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:104:25)",
+              "new FargateTaskDefinition (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.js:22:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/fargate_service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fargateserviceService5FA1A89C",
+            "trace": [
+              "new BaseService (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:142:25)",
+              "new FargateService (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.js:34:9)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TargetGroup5xx/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TargetGroup5xx43EFCD6E",
+            "trace": [
+              "new Alarm (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-cloudwatch/lib/alarm.js:74:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TargetGroup25xx/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TargetGroup25xx2FAF422E",
+            "trace": [
+              "new Alarm (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-cloudwatch/lib/alarm.js:74:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TargetGroupUnhealthyHosts/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TargetGroupUnhealthyHosts734E7711",
+            "trace": [
+              "new Alarm (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-cloudwatch/lib/alarm.js:74:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TargetGroup2UnhealthyHosts/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TargetGroup2UnhealthyHosts9640140F",
+            "trace": [
+              "new Alarm (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/aws-cloudwatch/lib/alarm.js:74:23)",
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/lburl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lburl",
+            "trace": [
+              "/tmp/tmpod9a704f/lib/program.js:8432:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "Kernel._create (/tmp/tmpod9a704f/lib/program.js:8432:34)",
+              "Kernel.create (/tmp/tmpod9a704f/lib/program.js:8173:29)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-PbmnBI/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpod9a704f/lib/program.js:8860:24)",
+              "/tmp/tmpod9a704f/lib/program.js:8248:107",
+              "Kernel._ensureSync (/tmp/tmpod9a704f/lib/program.js:8841:28)",
+              "Kernel.invoke (/tmp/tmpod9a704f/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/tmp/tmpod9a704f/lib/program.js:9757:36)",
+              "KernelHost.run (/tmp/tmpod9a704f/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/tmp/tmpod9a704f/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "ecs-inf-test"
+    }
+  }
+}
